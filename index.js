@@ -1,10 +1,29 @@
+
+const flipWords =(word) => {
+  theArray = word.split('')
+  reversedArray = theArray.reverse()
+  joinedWord = reversedArray.join('')
+  return joinedWord
+}
+
+
+
 function isPalindrome(word) {
-  // Write your algorithm here
+const palin = flipWords(word)
+if(word === palin) {
+  return true
+}else{
+  return false
+}
 }
 
 /* 
   Add your pseudocode here
-*/
+*/ //Word needs to be the same word reveresed
+//reverse the string and compare the result
+//write a functiion that reverses words
+//than use an if statement to compare words.
+
 
 /*
   Add written explanation of your solution here
